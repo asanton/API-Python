@@ -7,6 +7,7 @@ dynamodb = boto3.resource('dynamodb')
 
 
 def get(event, context):
+    print("Recibido peticion para id:"+event['pathParameters']['id'])
     table = dynamodb.Table(os.environ['DYNAMODB_TABLE'])
 
     # fetch todo from the database
