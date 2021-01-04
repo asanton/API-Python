@@ -3,7 +3,7 @@ import logging
 import os
 import time
 import uuid
-
+import uuid
 import boto3
 dynamodb = boto3.resource('dynamodb')
 
